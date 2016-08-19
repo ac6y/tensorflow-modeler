@@ -1,0 +1,17 @@
+# --- Model settings
+
+# Valid model types: {wide, deep, wide_n_deep}
+model_type: deep
+
+# Shared model hyper-params
+train_steps: 1500
+learn_rate: 0.1
+
+# Deep model hyper-params
+hidden_units: [100, 50]
+embedding_dimension: 8
+
+# Output
+model_dir: # leave empty to get a temp dir
+weights_file: ./output/weights.txt
+

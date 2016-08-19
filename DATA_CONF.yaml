@@ -1,0 +1,33 @@
+# --- Input
+
+# define train_n_test_file if train and test data is combined
+train_n_test_file: data/KidCreative.csv
+
+# define train and test files separately if available
+train_file: 
+test_file: 
+
+
+# --- Features
+LABEL_COLUMN: Buy
+BINARY_COLUMNS:
+- IsFemale
+- IsMarried
+- HasCollege
+- IsProfessional
+- IsRetired
+- Unemployed
+- DualIncome
+- Minors
+- Own
+- House
+- White
+- English
+- PrevChildMag
+- PrevParentMag
+
+CONTINUOUS_COLUMNS:
+- Income
+- ResidenceLength
+
+MULTI_CATEGORY_COLUMNS: []

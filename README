@@ -1,0 +1,31 @@
+usage: tf_app.py [-h] [--verbose [VERBOSE]] [--noverbose]
+                 [--model_conf_file MODEL_CONF_FILE]
+                 [--data_conf_file DATA_CONF_FILE]
+                 [--train_n_test_file TRAIN_N_TEST_FILE]
+                 [--model_dir MODEL_DIR] [--weights_file WEIGHTS_FILE]
+                 [--model_type MODEL_TYPE] [--train_steps TRAIN_STEPS]
+                 [--learn_rate LEARN_RATE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --verbose [VERBOSE]   Show INFO and WARN messages
+  --noverbose
+  --model_conf_file MODEL_CONF_FILE
+                        Path to the Model Config Yaml file, default:{}
+  --data_conf_file DATA_CONF_FILE
+                        Path to the Data Config Yaml file, default:{}
+  --train_n_test_file TRAIN_N_TEST_FILE
+                        Path to the combined training and testing data (will
+                        be split).
+  --model_dir MODEL_DIR
+                        Base directory for output models.
+  --weights_file WEIGHTS_FILE
+                        File path for serialized model weights output.
+  --model_type MODEL_TYPE
+                        Valid model types: {'wide', 'deep', 'wide_n_deep'}.
+  --train_steps TRAIN_STEPS
+                        Number of training steps.
+  --learn_rate LEARN_RATE
+                        Learning Rate
+
+
