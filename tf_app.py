@@ -264,13 +264,13 @@ def input_fn(df):
     multi_category_cols = {k: tf.SparseTensor(
         indices=[[i, 0] for i in range(df[k].size)],
         values=df[k].values.astype(str),
-        shape=[df[k].size, 1])
+        dense_shape=[df[k].size, 1])
                            for k in MULTI_CATEGORY_COLUMNS}
 
     binary_cols = {k: tf.SparseTensor(
         indices=[[i, 0] for i in range(df[k].size)],
         values=df[k].values.astype(int),
-        shape=[df[k].size, 1])
+        dense_shape=[df[k].size, 1])
                    for k in BINARY_COLUMNS}
     # DEBUG
     print('multi_category_cols:')
