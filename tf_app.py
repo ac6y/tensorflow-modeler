@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
-This is a TensorFlow rapid model prototyping tool intended to be relatively
-general-purpose and very easy to set up.
+This is a TensorFlow rapid binary classifier model prototyping tool intended
+to be very easy to set up.
 """
 # 2016-07-19 M. Okun
 # Copyright 2016 M. Okun
